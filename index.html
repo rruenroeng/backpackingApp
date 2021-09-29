@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ProjectManager</title>
+    <link rel="stylesheet" href="app.css" />
+    <script src="dist/app.js" defer></script>
+  </head>
+  <body>
+    <template id="item-input">
+      <form>
+        <div class="form-control">
+          <label for="name">Item</label>
+          <input type="text" id="name" />
+        </div>
+        <div class="form-control">
+          <label for="description">Description</label>
+          <textarea id="description" rows="3"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="weight">Weight</label>
+          <input type="number" id="weight" step="1" min="0" max="1000" />
+        </div>
+        <button type="submit">Add Item</button>
+      </form>
+    </template>
+    <template id="single-item">
+      <li draggable="true">
+        <h2></h2>
+        <h3></h3>
+        <p></p>
+      </li>
+    </template>
+    <template id="packing-list">
+      <section class="items">
+        <header>
+          <h2></h2>
+        </header>
+        <ul></ul>
+      </section>
+    </template>
+    <div id="app"></div>
+  </body>
+</html>
