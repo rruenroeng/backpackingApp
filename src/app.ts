@@ -255,8 +255,6 @@ class ProjectGroup
     }
   }
 
-  
-
   @autobind
   dropHandler(event: DragEvent) {
     const itmId = event.dataTransfer!.getData("text/plain");
